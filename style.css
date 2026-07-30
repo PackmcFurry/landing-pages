@@ -84,10 +84,7 @@ main > div > button{
     height: 30px;
     border: none;
     border-radius: 5px;
-}
-
-button:hover{
-    cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 #rectangular{
@@ -130,8 +127,8 @@ button:hover{
 
 .secinfo > .infocontainer > .item > .cube{
     border: rgb(86, 135, 239) solid 4px;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 15px;
 }
 
@@ -139,6 +136,7 @@ button:hover{
     text-align: center;
     font-size: 1.1em;
     font-weight: 300;
+    width: 170px;
 }
 
 .secquote{
@@ -203,6 +201,13 @@ button:hover{
     border-radius: 5px;
     flex-direction: 0 0 auto;
     font-size: 1.2em;
+    transition-duration: 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #79a9f6;
+    transition-duration: 0.3s;
 }
 
 footer{
