@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,27 +12,57 @@ body{
 
 .secheader{
     background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 15px 0px 100px 0px;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    width: 80vw;
 }
 
 header > p{
     color: #F9FAF8;
     font-size: 24px;
+    font-weight: 900;
 }
 
 ul{
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 40px;
 }
 
 ul > li > a{
     text-decoration: none;
     color: #F9FAF8;
+    transition-duration: 0.3s;
+}
+
+ul > li > a:hover{
+    text-decoration: underline;
+    font-weight: 900;
+    transition-duration: 0.3s;
+}
+
+main{
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#text {
+    flex-basis: 450px;
+}
+
+#text > button{
+    margin-top: 10px;
 }
 
 main > div > h1{
@@ -45,18 +76,81 @@ main > div > p{
     font-size: 18px;
 }
 
-#rectangular{
-    width: 400px;
-    height: 200px;
-    background-color: #5c6c83;    
+main > div > button{
+    background-color: #3882F6;
+    color: white;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+
 }
 
+#rectangular{
+    width: 550px;
+    height: 250px;
+    background-color: #5c6c83;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
 .secinfo{
+    padding: 50px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
 
+.secinfo > h2{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.secinfo > .infocontainer{
+    display: flex;
+    gap: 15px;
+    width: 80vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secinfo >.infocontainer > .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 200px;
+    gap: 10px;
+}
+
+.secinfo > .infocontainer > .item > .cube{
+    border: rgb(86, 135, 239) solid 4px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.secinfo > .infocontainer .item > p{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
 .secquote{
     background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.quote{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .quote > .quotetxt{
@@ -65,10 +159,58 @@ main > div > p{
     font-weight: 300;
 }
 
-.seccta{
+.quote >  .quotename{
+    font-size: 1.5em;
+    font-weight: 700;
+    align-self: flex-end;
+}
 
+.seccta{
+    padding: 100px 0px;
+}
+
+.cta{
+    background-color: #3882F6;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cta > div > h1{
+    color: white;
+    font-size: 1.6em;
+}
+
+.cta > div > p{
+    color: white;
+}
+
+.cta > button{
+    background-color: #3882F6;
+    color: white;
+    font-weight: bolder;
+    width: 150px;
+    height: 50px;
+    border: white solid 2px;
+    border-radius: 5px;
+    flex-direction: 0 0 auto;
+    font-size: 1.2em;
 }
 
 footer{
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+footer > p{
+    font-size: 1.3em;
+    color: white;
 }
